@@ -8,7 +8,9 @@ Este viseo complementario muestra un cambio de ultima hora en el modulo de regis
 <https://www.youtube.com/watch?v=Rk9PnT6GmhA>
 
 
-Los archivos del proyecto estan en la rama 'master' de este repositorio
+Los archivos del proyecto estan en la rama 'master' de este repositorio.
+
+La carpeta base del proyecto es EntregaLezanBlancJimenez, desde la que se debe ejecutar python manage.py runserver
 
 Integrantes:
 
