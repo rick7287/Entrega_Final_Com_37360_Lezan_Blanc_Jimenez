@@ -1,5 +1,5 @@
 # Entrega_Final_Com_37360_Lezan_Blanc_Jimenez
-Entrega del proyecto final de la comision 37360, curo de Python de CoderOuse
+Entrega del proyecto final de la comision 37360, curso de Python de CoderHouse
 
 En este link puedes ver el video de la pagina en operacion.
 <https://www.youtube.com/watch?v=jsI5otXLU5A>
