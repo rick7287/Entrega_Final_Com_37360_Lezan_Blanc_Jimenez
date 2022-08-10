@@ -9,7 +9,7 @@ Este viseo complementario muestra un cambio de ultima hora en el modulo de regis
 
 Integrantes:
 
-Paula Lezan: Encargada de la app de mensajeria, 'Message'. Se creo una app que permite a los usuarios mandar mesnajes a otros usuarios registrados. Consta de un inbox donde se muestran los 'holos' de cnversacion que se tiene con algun usuario. Al hacer click al vinculo con el nombre del usuario, se muestran los mensajes que hay entre ese usuario y la persona loggeada.
+Paula Lezan: Encargada de la app de mensajeria, 'Message'. Se creo una app que permite a los usuarios mandar mesnajes a otros usuarios registrados. Consta de un inbox donde se muestran los 'hilos' de conversacion que se tiene con algun usuario. Al hacer click al vinculo con el nombre del usuario, se muestran los mensajes que hay entre ese usuario y la persona loggeada.
 
 
 Ricardo Jimenez: Encargado de la app 'Blog' y 'comun': Se creo la App para el manejo del Blog. Incluye un CRUD completo para crear, editar, borrar y ver entradas de blog. Se incluyo el uso del editor de texto enriquecido de Django CKeditor para el template de creacion y edicion de publicaciones del blog. En la app 'comun' simplemente se crearon las vistas para mandar llamar a la pagina de inicio (/) y acerca de (/about), las cuales se hicieron en html basico.
