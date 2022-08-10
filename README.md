@@ -7,6 +7,9 @@ En este link puedes ver el video de la pagina en operacion.
 Este viseo complementario muestra un cambio de ultima hora en el modulo de registro
 <https://www.youtube.com/watch?v=Rk9PnT6GmhA>
 
+
+Los archivos del proyecto estan en la rama 'master' de este repositorio
+
 Integrantes:
 
 Paula Lezan: Encargada de la app de mensajeria, 'Message'. Se creo una app que permite a los usuarios mandar mesnajes a otros usuarios registrados. Consta de un inbox donde se muestran los 'hilos' de conversacion que se tiene con algun usuario. Al hacer click al vinculo con el nombre del usuario, se muestran los mensajes que hay entre ese usuario y la persona loggeada.
