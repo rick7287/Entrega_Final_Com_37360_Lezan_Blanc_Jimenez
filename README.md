@@ -1,6 +1,10 @@
 # Entrega_Final_Com_37360_Lezan_Blanc_Jimenez
 Entrega del proyecto final de la comision 37360, curo de Python de CoderOuse
 
+En este link puedes ver el video de la pagina en operacion.
+
+<https://www.youtube.com/watch?v=jsI5otXLU5A>
+
 Integrantes:
 
 Paula Lezan: Encargada de la app de mensajeria, 'Message'. Se creo una app que permite a los usuarios mandar mesnajes a otros usuarios registrados. Consta de un inbox donde se muestran los 'holos' de cnversacion que se tiene con algun usuario. Al hacer click al vinculo con el nombre del usuario, se muestran los mensajes que hay entre ese usuario y la persona loggeada.
