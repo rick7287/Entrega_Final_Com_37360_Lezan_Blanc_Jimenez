@@ -1,0 +1,58 @@
+{% extends "AppEntrega1/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo_pagina %}
+
+Publicacciones
+
+{% endblock %}
+
+
+
+{% block titulo %}
+
+<h1 class="mb-5">BLOG</h1>
+
+{% endblock %}
+
+
+
+{% block que_cambia %}
+
+<br><br>
+<a  class="btn btn-success" href="{% url 'pagina_crear' %}">Crear nueva entrada de Blog</a><br>
+
+
+<h1>{{ mensaje }}</h1><br><br>
+
+<ul>
+{% for pagina in paginas %}
+
+    <li><a href="{% url 'pagina_detalle' pagina.id %}">{{pagina}}</a></li>
+    <img height="80px" src="{{ pagina.imagen.url }}" alt=""/>
+    
+
+    <!--Al presionar el boton, manda llamar a la url con id de la pagina--->
+    
+    <br><br>    <a  class="btn btn-warning btn-sm" href="{% url 'pagina_editar' pagina.id %}">Editar Publicacion</a>
+    <a  class="btn btn-danger btn-sm" href="{% url 'pagina_borrar' pagina.id %}">Eliminar Publicacion</a><br><br><br>
+    
+    
+
+        
+
+    
+    
+
+{% endfor %}
+</ul>
+
+<br>
+<br>
+
+
+
+
+{% endblock %}

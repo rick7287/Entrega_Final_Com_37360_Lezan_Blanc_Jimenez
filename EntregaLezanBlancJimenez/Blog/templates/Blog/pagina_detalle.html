@@ -1,0 +1,52 @@
+{% extends "AppEntrega1/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo_pagina %}
+
+{{ pagina.titulo }}
+
+{% endblock %}
+
+
+
+{% block titulo %}
+
+<h1 class="mb-5">{{ pagina.titulo }} Titulo</h1>
+
+{% endblock %}
+
+
+
+{% block que_cambia %}
+
+<br><a  class="btn btn-primary" href="{% url 'pages' %}">Volver al listado de Publicaciones</a>
+<br>
+<table>
+    <tr>
+        <td>Titulo</td>
+        <td>{{ pagina.titulo }}</td>
+    </tr>
+    <tr>
+        <td>Subtitulo</td>
+        <td>{{ pagina.subtitulo }}</td>
+    </tr>
+    <tr>
+        <td>Fecha de creacion</td>
+        <td>{{ pagina.fecha }}</td>
+    </tr>
+    <tr>
+        <td>Contenido</td>
+        <td>{{ pagina.cuerpo|safe }}</td>
+    </tr>
+    <tr>
+        <td>Imagen</td>
+        <td><img height="300px" src="{{ pagina.imagen.url }}" alt=""/></td>
+    </tr>
+
+</table>
+
+<br><br>    <a  class="btn btn-warning btn-sm" href="{% url 'pagina_editar' pagina.id %}">Editar Publicacion</a>
+
+{% endblock %}

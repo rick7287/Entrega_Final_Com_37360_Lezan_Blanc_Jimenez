@@ -1,0 +1,51 @@
+{% extends "AppEntrega1/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo_pagina %}
+
+Edicion de Entradas de blog
+
+{% endblock %}
+
+
+
+{% block titulo %}
+
+<h1 class="mb-5">Editar Entrada de Blog <p>{{ pagina.titulo }}</p></h1>
+
+{% endblock %}
+
+
+
+{% block que_cambia %}
+
+{{ mensaje }}
+
+{% if formulario.error %}
+        <p style = "color: red">Hay algo mal en el formulario</p>
+    {% endif %}
+
+    <form action="{% url 'pagina_editar' pagina.id %}" method="POST" enctype="multipart/form-data">{% csrf_token %}
+
+        <br><br>
+        <table>
+            {{ formulario.media }}
+            {{ formulario.as_p }}
+        </table>
+
+        <!--Este es un botos que ejecuta una accion, aqui es submit (POST)-->
+        <button type="submit" class="btn btn-success">Guardar</button> 
+         
+        <!--Este es un vinculo en forma de boton que direcciona a una url, aqui a pages-->
+        <a  class="btn btn-warning" href="{% url 'pages' %}">Cancelar</a>
+
+
+    </form>
+
+    <br>
+
+   
+
+{% endblock %}

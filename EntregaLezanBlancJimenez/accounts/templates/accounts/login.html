@@ -1,0 +1,16 @@
+{% extends 'AppEntrega1/padre.html' %}
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">LOGIN</h1>
+<h1>{{ mensaje }}</h1>
+
+{% endblock %}
+
+{% block que_cambia %}
+
+<form action="{% url 'login' %}" method="POST"> {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">INICIAR SESION</button>
+</form>
+{% endblock %}

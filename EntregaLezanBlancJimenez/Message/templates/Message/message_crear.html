@@ -1,0 +1,52 @@
+{% extends "AppEntrega1/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo_pagina %}
+
+Redactar Mensaje
+
+{% endblock %}
+
+
+
+{% block titulo %}
+
+<h1 class="mb-5">Nuevo Mensaje</h1>
+
+{% endblock %}
+
+
+
+{% block que_cambia %}
+
+{% if formulario.error %}
+        <p style = "color: red">Hay algo mal en el formulario</p>
+    {% endif %}
+
+    <form action="{% url 'message_crear' %}" method="POST">{% csrf_token %}
+
+        {{ mensaje }}
+        <br><br>
+        <table>
+            
+            {{ formulario.as_p }}
+        </table>
+
+        <!--Este es un botos que ejecuta una accion, aqui es submit (POST)-->
+        <button type="submit" class="btn btn-success">Mandar</button> 
+
+        <!--Este es un vinculo en forma de boton que direcciona a una url, aqui a pages-->
+        <a  class="btn btn-warning" href="{% url 'messages' %}">Cancelar</a>
+        
+
+
+    </form>
+
+   
+
+    <br>
+
+    
+{% endblock %}
