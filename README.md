@@ -2,8 +2,10 @@
 Entrega del proyecto final de la comision 37360, curo de Python de CoderOuse
 
 En este link puedes ver el video de la pagina en operacion.
-
 <https://www.youtube.com/watch?v=jsI5otXLU5A>
+
+Este viseo complementario muestra un cambio de ultima hora en el modulo de registro
+<https://www.youtube.com/watch?v=Rk9PnT6GmhA>
 
 Integrantes:
 
